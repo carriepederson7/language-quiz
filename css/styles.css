@@ -1,5 +1,24 @@
+.quiz-title{
+  text-align: center;
+  background-color: #DAECEF;
+}
+
+.quiz{
+  background-color: #DAECEF;
+  padding: 15px;
+}
+
+.newBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
 .results{
   display:none;
+  padding: 15px;
+  background-color: white;
 }
 
 #csharp{
