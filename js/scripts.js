@@ -9,6 +9,10 @@ $(document).ready(function(){
     var earning=$("input:radio[name=earning]:checked").val();
     var graphics=$("input:radio[name=graphics]:checked").val();
 
+    if (!type || !setting || !frontBack || !earning || !graphics){
+      alert("Please answer questions.")
+    }else if ()
+
   )};
 
 )};
