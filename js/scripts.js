@@ -13,14 +13,12 @@ $(document).ready(function(){
 
     if (!type || !setting || !frontBack || !earning || !graphics){
       alert("Please answer all of the questions.")
-    }else if (earning === "very-important"){
-      $("#javascript").show();
-    }else if(type === "web"){
+    }else if(frontBack === "back-end" && (graphics === "high" || "medium" || type === "mobile")|| "game"){
+      $("#csharp").show();
+    }else if(frontBack === "back-end" && (setting === "freelance" || type === "web" || earning === "important" || "somewhat-important")){
       $("#php").show();
-    }else if(type === "mobile"){
-      $("#c#").show();
     }else {
-      alert("Please answer questions.");
+      $("#javascript").show();
     }
 
   });
