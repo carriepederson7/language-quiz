@@ -13,9 +13,9 @@ $(document).ready(function(){
 
     if (!type || !setting || !frontBack || !earning || !graphics){
       alert("Please answer all of the questions.")
-    }else if((type === "mobile"|| "game") && (setting === "traditional" || "start-up") && (graphics === "high" || "medium" ) && frontBack=== "back-end"){
+    }else if(type === "game" && frontBack==="back-end" && (graphics === "high" || "medium")){
       $("#csharp").show();
-    }else if(type === "web" && setting === "freelance" && (earning === "important" || "somewhat-important") && graphics === "low" && frontBack === "back-end"){
+    }else if(type === "web" || setting === "freelance"){
       $("#php").show();
     }else {
       $("#javascript").show();
